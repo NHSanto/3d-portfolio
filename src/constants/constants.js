@@ -25,6 +25,10 @@ import {
   jwt,
   nextauth,
   socialSphere,
+  mysql,
+  sms,
+  dhikr,
+  imdb,
 } from "../assets";
 
 export const navLinks = [
@@ -129,174 +133,52 @@ const technologies = [
   //   icon: nextauth,
   // },
   // {
-  //   name: "figma",
-  //   icon: figma,
+  //   name: "MySql",
+  //   icon: mysql,
   // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
+  {
+    name: "docker",
+    icon: docker,
+  },
 ];
 
 const projects = [
   {
-    name: "InkSync",
+    name: "SMS Portal",
     description:
-      "A real-time collaborative whiteboard web application built with NextJs, Express, and Socket.io.",
+      "SMS portal a web-based system which provides the functions and features necessary to allow authorized users to send SMS messages to intended recipients. Include features like message scheduling, two-way communication with consumers, bulk SMS, specialist marketing customizations, and a range of phone number options.",
     features: [
-      "Users can create a room and invite others to join the room using a unique room code.",
-      "Users can draw on the whiteboard and the changes will be reflected in real-time to all the users in the room.",
+      "Send multiple, bulk messages to a targeted audience in real-time",
+      "Include features like message scheduling",
     ],
     tags: [
-      {
-        name: "NextJs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ExpressJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Socket.io",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "NodeJs",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: inkSync,
-    source_code_link: "https://github.com/himanshu8443/InkSync",
-    live_link: "https://www.inksync.cloud/",
-  },
-  {
-    name: "Hayasaka",
-    description:
-      "A dynamic full-stack music streaming web application with Next.js 13 and MongoDB.",
-    features: [
-      "User authentication using NextAuth.js with JWT and OAuth providers.",
-      "Redux to Manage app state effectively.",
-      "Play, pause, skip, and control the playback of songs.",
-      "Users can Create, update and delete their own playlists.",
-      "Add songs to favorites in one click.",
-      "Auto adds similar songs to the queue.",
-      "Swipe and touch gestures for touch-responsive devices.",
-      "Display song details such as title, artist, album, and album artwork.",
-      "PWA (Progressive Web App) support. ",
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nextjs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "nextauth",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "green-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/himanshu8443/hayasaka",
-    live_link: "https://hayasaka.live/",
-  },
-  {
-    name: "Study Notion",
-    description: "Developed an educational technology website with CMS.",
-    features: [
-      "Implemented Email verification and using OTP user authentication and login/signup functionality using JWT for secure access to the platform.",
-      "Students can browse and purchase courses. Instructors can create new courses, edit existing courses, and delete courses they have created.",
-      "Integrated MongoDB database to store user information, course data, and progress tracking.",
-      "Employed RESTful API principles for seamless communication between the frontend and backend systems.",
-      "Razorpay payment integration.",
-      "PWA (Progressive Web App) support.",
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ExpressJs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/himanshu8443/Study-Notion-master",
-    live_link: "https://studynotion.fun/",
-  },
-  {
-    name: "FlipKart Price Tracker",
-    description:
-      "Chrome extension to track FlipKart product prices and send an alert to users when prices go below the user-selected price.",
-    features: [
-      "Users can add products to the watchlist by clicking on the extension icon on the product page.",
-      "Users can set a price alert by entering the desired price for the product.",
-    ],
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Chrome Extension",
-        color: "green-text-gradient",
-      },
       {
         name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Java",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Spring boot",
         color: "pink-text-gradient",
       },
+      {
+        name: "AntDesign",
+        color: "orange-text-gradient",
+      },
     ],
-    image: tracker,
-    source_code_link: "https://github.com/himanshu8443/FlipKart-Price-Tracker",
-    live_link:
-      "https://chromewebstore.google.com/detail/fliptrack-flipkart-price/pekpfcghlbljghaojdlajgpceebobokd?hl=en",
+    image: sms,
+    source_code_link: "",
+    live_link: "",
   },
   {
-    name: "Social Sphere",
+    name: "Dhikr",
     description:
-      "A full-stack social media application with user authentication, infinite scroll, and image and video uploads.",
+      "Dhikr is a cross-browser extension that brings a touch of spiritual enrichment to your daily browsing experience. With Dhikr, every new tab becomes an opportunity to read a Hadith and learn a new word, fostering a sense of mindfulness and knowledge.",
     features: [
-      "User authentication using JWT and OAuth providers.",
-      "Infinite scroll for posts.",
-      "Image and video uploads.",
-      "Like, comment, and share posts.",
-      "Follow and unfollow users.",
-      "Dark mode support.",
+      "A small companion of your daily dhikr while you work or surf internet. Recite Tasbih everytime you open a new tab.",
     ],
     tags: [
       {
@@ -304,25 +186,36 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dhikr,
+    source_code_link: "https://github.com/Balagha/dhikr",
+    live_link: "https://chromewebstore.google.com/detail/dhikr-browser-extension/alhhipkdolifadffnollpkijfpnlnfka",
+  },
+  {
+    name: "IMDB clone",
+    description: "IMDb is an online database of information related to films, television series, podcasts, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.",
+    features: [
+    ],
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Html",
         color: "green-text-gradient",
       },
       {
-        name: "Supabase",
+        name: "Css",
         color: "pink-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "blue-text-gradient",
-      },
     ],
-    image: socialSphere,
-    source_code_link: "https://github.com/himanshu8443/SocialSphere",
-    live_link: "https://socialspherex.vercel.app/",
+    image: imdb,
+    source_code_link: "https://github.com/NHSanto/imdb-clone",
+    live_link: "https://nhsanto.github.io/imdb-clone/",
   },
 ];
 

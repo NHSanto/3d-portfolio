@@ -25,6 +25,7 @@ import express from "./tech/express.png";
 import java from "./tech/java.png";
 import jwt from "./tech/jwt.svg";
 import nextauth from "./tech/nextauth.png";
+import mysql from "./tech/mysql.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -34,6 +35,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import inkSync from "./ink.png";
+import sms from "./sms-portal.jpeg";
+import dhikr from "./dhikr.png";
+import imdb from "./imdb.png";
 import tracker from "./tracker.png";
 import socialSphere from "./socialSphere.png";
 
@@ -66,6 +70,9 @@ export {
   carrent,
   jobit,
   inkSync,
+  sms,
+  dhikr,
+  imdb,
   tracker,
   socialSphere,
   nextjs,
@@ -73,4 +80,5 @@ export {
   java,
   jwt,
   nextauth,
+  mysql,
 };
